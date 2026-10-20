@@ -1,0 +1,20 @@
+[project]
+name = "inventory-service"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sumedh-Lenovo", email = "sumedh85@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aio-pika>=10.0.1",
+    "fastapi[standard]>=0.141.1",
+]
+
+[project.scripts]
+inventory-service = "inventory_service:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
